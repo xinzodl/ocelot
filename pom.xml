@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.bbva.ebdm.ocelot</groupId>
+    <artifactId>ocelot</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1.0</version>
+    <name>Ocelot</name>
+    <description>An ETL framework for the SmartData platform at BBVA CIB</description>
+    <inceptionYear>2019</inceptionYear>
+    <organization>
+        <name>BBVA</name>
+        <url>https://www.bbva.com</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>agraboso</id>
+            <name>Alberto García-Raboso</name>
+            <email>agraboso@opensistemas.com</email>
+            <organization>OpenSistemas</organization>
+            <organizationUrl>https://www.opensistemas.com</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>agomez</id>
+            <name>Álvaro Gómez Ramos</name>
+            <email>agomez@opensistemas.com</email>
+            <organization>OpenSistemas</organization>
+            <organizationUrl>https://www.opensistemas.com</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>pgallego</id>
+            <name>Pablo Lopez Gallego</name>
+            <email>pgallego@opensistemas.com</email>
+            <organization>OpenSistemas</organization>
+            <organizationUrl>https://www.opensistemas.com</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+    <modules>
+        <module>base</module>
+        <module>core</module>
+        <module>engines/spark</module>
+        <module>io/spark/hdfs</module>
+        <module>io/spark/hive</module>
+        <module>io/spark/kafka</module>
+        <module>io/spark/streaming</module>
+        <module>apps/hql</module>
+        <module>archetypes/spark</module>
+        <module>integration</module>
+    </modules>
+</project>
